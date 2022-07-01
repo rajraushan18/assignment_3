@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ForgetPass</servlet-name>
+  	<display-name>ForgetPass</display-name>
+  	<description>gets called when 'forgot password' is clicked and returns password!!</description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.ForgetPass</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ImageDelete</servlet-name>
+  	<display-name>ImageDelete</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.ImageDelete</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ImageEdit</servlet-name>
+  	<display-name>ImageEdit</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.ImageEdit</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ImageSave</servlet-name>
+  	<display-name>ImageSave</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.ImageSave</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterUser</servlet-name>
+  	<display-name>RegisterUser</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.RegisterUser</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Welcome</servlet-name>
+  	<display-name>Welcome</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.javaAdvance.assignment3.servlet.Welcome</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ImageUtilityServlet</servlet-name>
+    <jsp-file>/ImageUtility.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ForgetPass</servlet-name>
+  	<url-pattern>/ForgetPass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageDelete</servlet-name>
+  	<url-pattern>/ImageDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageEdit</servlet-name>
+  	<url-pattern>/ImageEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageSave</servlet-name>
+  	<url-pattern>/ImageSave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterUser</servlet-name>
+  	<url-pattern>/RegisterUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Welcome</servlet-name>
+  	<url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageUtilityServlet</servlet-name>
+    <url-pattern>/ImageUtility</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>loginPage.html</welcome-file>
+  </welcome-file-list>
+</web-app>

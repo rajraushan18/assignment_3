@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Login Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+          id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="loginPage.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h2 style="text-decoration: underline">Image Utility</h2>
+            <div class="panel panel-login">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="#" class="active" id="login-form-link">Login</a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#" id="register-form-link">Register</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="loginForm" role="form" style="display: block">
+                                <div class="form-group">
+                                    <input type="text" name="loginuserName" id="loginUserName" required tabindex="1"
+                                           class="form-control"
+                                           placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <input name="loginpass" type="password" id="loginPass" required
+                                           tabindex="2"
+                                           class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <input type="submit" value="Login" id="loginSubmitBtn" tabindex="4"
+                                                   class="form-control btn btn-login">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <a id="forget-pass-link" tabindex="5"
+                                                   class="forgot-password">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form method="post" role="form" action="RegisterUser" id="registrationForm"
+                                  style="display: none;">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control"
+                                           id="registerFullName" tabindex="1" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" tabindex="1" class="form-control"
+                                           placeholder="Username" name="userName" id="registerUserName" required>
+                                </div>
+                                <div class="form-group">
+                                    <input name="email" type="email" id="registerEmail" tabindex="1"
+                                           class="form-control"
+                                           placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group">
+                                    <input name="pass" type="password" id="registerPass" required tabindex="2"
+                                           class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input name="rePass" type="password" id="registerRePass" required tabindex="2"
+                                           class="form-control" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <input type="submit" name="register-submit" id="register-submit"
+                                                   tabindex="4" class="form-control btn btn-register"
+                                                   value="Register Now">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form id="fpForm" style="display: none">
+                                <div class="form-group">
+                                    <input type="text" name="UserName"
+                                           id="forgotPasswordUserName"
+                                           tabindex="1"
+                                           class="form-control"
+                                           placeholder="Username"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <input name="email" type="email"
+                                           id="forgotPasswordEmail"
+                                           tabindex="1"
+                                           class="form-control"
+                                           placeholder="Email Address"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <input type="submit" value="Show Password"
+                                                   tabindex="4" class="form-control btn btn-register"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery-3.1.0.js"></script>
+<script src="loginPage.js"></script>
+</body>
+</html>
